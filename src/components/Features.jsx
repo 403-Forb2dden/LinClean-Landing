@@ -172,12 +172,11 @@ function ThreatBrowserMockup({ currentStep, step }) {
             </div>
             <div className="relative">
               <div className="h-2.5 w-24 bg-gray-200 rounded mb-2"></div>
-              <div className={`h-9 w-full rounded border transition-colors duration-300 ${showContentSignals ? 'bg-red-50 border-red-400 ring-2 ring-red-200' : 'bg-gray-50 border-gray-200'}`}></div>
-
-              <div className={`absolute -right-2 top-1/2 translate-x-full -translate-y-1/2 bg-red-600 text-white text-xs px-2 py-1 rounded shadow-lg whitespace-nowrap transition-all duration-300 ${showContentSignals ? 'opacity-100 translate-x-[110%]' : 'opacity-0 translate-x-[80%] pointer-events-none'}`}>
+              <div className={`absolute left-1/2 -top-7 z-10 -translate-x-1/2 bg-red-600 text-white text-xs px-2 py-1 rounded shadow-lg whitespace-nowrap transition-all duration-300 ${showContentSignals ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-1 pointer-events-none'}`}>
                 금융정보 입력 필드
-                <div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 border-4 border-transparent border-r-red-600"></div>
+                <div className="absolute left-1/2 bottom-0 translate-y-full -translate-x-1/2 border-4 border-transparent border-t-red-600"></div>
               </div>
+              <div className={`h-9 w-full rounded border transition-colors duration-300 ${showContentSignals ? 'bg-red-50 border-red-400 ring-2 ring-red-200' : 'bg-gray-50 border-gray-200'}`}></div>
             </div>
           </div>
 
