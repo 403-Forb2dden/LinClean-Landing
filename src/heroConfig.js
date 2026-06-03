@@ -1,0 +1,1 @@
+export const HERO_SCAN_DURATION_MS = 5000;
