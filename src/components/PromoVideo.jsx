@@ -4,7 +4,6 @@ const videoUrl = 'https://www.youtube.com/watch?v=l_kftqMuXeM';
 const embedUrl = 'https://www.youtube.com/embed/l_kftqMuXeM?autoplay=1&rel=0';
 const thumbnailUrl = 'https://img.youtube.com/vi/l_kftqMuXeM/sddefault.jpg';
 const fallbackThumbnailUrl = 'https://img.youtube.com/vi/l_kftqMuXeM/hqdefault.jpg';
-const betaBuildUrl = 'https://expo.dev/accounts/dkdododo/projects/LinClean/builds/46e8127e-dc07-46aa-bec0-0c943a8ef9ed';
 
 export default function PromoVideo() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -57,27 +56,6 @@ export default function PromoVideo() {
 
         <div className="sr-only">
           <a href={videoUrl}>LinClean 소개 영상 보기</a>
-        </div>
-
-        <div className="mt-28 text-center">
-          <p className="text-sm font-bold text-emerald-700 mb-4">Android 베타 테스트</p>
-          <h3 className="text-2xl md:text-3xl font-black text-gray-900 mb-4 tracking-tight">
-            앱 출시 전 LinClean을 먼저 사용해보세요
-          </h3>
-          <div className="mt-8">
-            <a
-              href={betaBuildUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="group inline-flex items-center justify-center gap-3 px-7 py-4 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-black shadow-2xl shadow-emerald-500/30 ring-1 ring-emerald-400/20 hover:from-emerald-600 hover:to-teal-600 hover:-translate-y-0.5 transition-all duration-300"
-            >
-              <span className="w-9 h-9 rounded-full bg-white/15 flex items-center justify-center group-hover:bg-white/25 transition-colors">
-                <span className="icon-rocket text-xl"></span>
-              </span>
-              <span>베타 테스트하러 가기</span>
-              <span className="icon-arrow-up-right text-xl group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></span>
-            </a>
-          </div>
         </div>
       </div>
     </section>

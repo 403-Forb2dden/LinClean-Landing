@@ -48,8 +48,8 @@ export default function App() {
         <Header />
         <main className="flex-grow">
           <Hero />
-          <Features />
           <PromoVideo />
+          <Features />
         </main>
         <Footer />
       </div>

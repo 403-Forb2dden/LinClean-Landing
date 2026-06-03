@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { HERO_SCAN_DURATION_MS } from '../heroConfig.js';
 
+const betaBuildUrl = 'https://expo.dev/accounts/dkdododo/projects/LinClean/builds/46e8127e-dc07-46aa-bec0-0c943a8ef9ed';
+
 export default function Hero() {
   const [isScanning, setIsScanning] = useState(true);
 
@@ -13,21 +15,31 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative pt-20 pb-24 overflow-hidden bg-gradient-to-b from-emerald-50/50 to-white" data-name="Hero" data-file="src/components/Hero.jsx">
+    <section className="relative pt-14 pb-24 overflow-hidden bg-gradient-to-b from-emerald-50/50 to-white" data-name="Hero" data-file="src/components/Hero.jsx">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:translate-x-8 xl:translate-x-12 transition-transform">
           <div className="text-center lg:text-left">
-            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-[var(--text-main)] mb-8 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-[var(--text-main)] mb-12 leading-tight">
               모든 링크를 한 곳에서<br />
               <span className="block h-4"></span>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-600">안전하고 편리하게</span>
             </h1>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mt-12">
-              <a href="#" onClick={(e) => e.preventDefault()} className="inline-block transition-transform hover:-translate-y-1">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" className="h-12 md:h-14" />
-              </a>
-              <a href="#" onClick={(e) => e.preventDefault()} className="inline-block transition-transform hover:-translate-y-1">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" className="h-12 md:h-14" />
+            <div className="mt-12 flex flex-col items-center lg:items-start">
+              <p className="text-sm font-bold text-emerald-700 mb-4">Android 베타 테스트</p>
+              <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-8 tracking-tight">
+                앱 출시 전 LinClean을 먼저 사용해보세요
+              </h2>
+              <a
+                href={betaBuildUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="group inline-flex items-center justify-center gap-3 px-7 py-4 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-black shadow-2xl shadow-emerald-500/30 ring-1 ring-emerald-400/20 hover:from-emerald-600 hover:to-teal-600 hover:-translate-y-0.5 transition-all duration-300"
+              >
+                <span className="w-9 h-9 rounded-full bg-white/15 flex items-center justify-center group-hover:bg-white/25 transition-colors">
+                  <span className="icon-rocket text-xl"></span>
+                </span>
+                <span>베타 테스트하러 가기</span>
+                <span className="icon-arrow-up-right text-xl group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></span>
               </a>
             </div>
           </div>
