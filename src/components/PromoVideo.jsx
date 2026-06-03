@@ -13,11 +13,11 @@ export default function PromoVideo() {
     <section className="bg-white pt-24 pb-24 px-4 sm:px-6 lg:px-8" data-name="PromoVideo" data-file="src/components/PromoVideo.jsx">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-5 tracking-tight">
-            LinClean을 영상으로 만나보세요
+          <h2 className="text-[22px] min-[375px]:text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 mb-5 tracking-tight break-keep leading-[1.6] sm:leading-tight">
+            영상으로 만나보세요
           </h2>
-          <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-            링크를 검사하고 정리하는 흐름을 짧은 영상으로 확인할 수 있습니다.
+          <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto break-keep leading-relaxed">
+            링크를 검사하고 정리하는 흐름을 짧은 영상으로 <span className="whitespace-nowrap">확인할 수 있습니다.</span>
           </p>
         </div>
 

@@ -86,11 +86,11 @@ export default function Features() {
     <section id="features" className="py-24 bg-white overflow-hidden border-t border-gray-100" data-name="Features" data-file="src/components/Features.jsx">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14 relative z-10">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight break-keep leading-tight">
             보이지 않는 위협까지 찾아냅니다
           </h2>
-          <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-            LinClean은 외부 위협 DB, 도메인 휴리스틱, 콘텐츠 분석과 AI 보조 판정을<br className="hidden sm:block" />
+          <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto break-keep leading-relaxed">
+            LinClean은 외부 위협 DB, 도메인 휴리스틱, 콘텐츠 분석과 AI 보조 판정을{' '}<br className="hidden sm:block" />
             하나의 점수로 합산해 접속 전 위험도를 판단합니다.
           </p>
         </div>
@@ -116,11 +116,12 @@ export default function Features() {
 
         <div className="mt-36 pt-20 border-t border-gray-100">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-5 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 mb-5 tracking-tight break-keep leading-tight">
               더 쉽게 관리하세요
             </h2>
-            <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-              사용자는 위험 링크를 걸러낸 뒤 저장, 분류, 재방문까지 이어지는 링크 관리 흐름을
+            <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto break-keep leading-relaxed">
+              사용자는 위험 링크를 걸러낸 뒤 저장, 분류, 재방문까지 이어지는
+              <br className="hidden sm:block" /> 링크 관리 흐름을
               자연스럽게 이어갈 수 있습니다.
             </p>
           </div>
@@ -147,7 +148,7 @@ function ThreatBrowserMockup({ currentStep, step }) {
   const showContentSignals = step >= 3;
 
   return (
-    <div className="relative w-full aspect-[4/3] lg:aspect-[5/4] max-w-[500px] mx-auto bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden flex flex-col">
+    <div className="relative w-full aspect-[4/5] sm:aspect-[4/3] lg:aspect-[5/4] max-w-[500px] mx-auto bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden flex flex-col">
       <div className="bg-gray-100 border-b border-gray-200 px-4 py-3 flex items-center gap-2 shrink-0">
         <div className="w-3 h-3 rounded-full bg-red-400"></div>
         <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
@@ -232,13 +233,13 @@ function DetectionRateSection() {
   return (
     <div className="mt-32 pt-20 border-t border-gray-100">
       <div className="text-center mb-10">
-        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-5 tracking-tight">
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 mb-5 tracking-tight break-keep leading-tight">
           검증된 탐지 성능
         </h2>
-        <p className="text-lg text-gray-500 max-w-3xl mx-auto">
-          LinClean 보안 엔진은 실제 수집 URL과 자체 회귀 샘플을 함께 점검해
-          <br className="hidden sm:block" />
-          악성 링크 판정의 정확도와 일관성을 검증합니다.
+        <p className="text-base sm:text-lg text-gray-500 max-w-3xl mx-auto break-keep leading-relaxed">
+          LinClean 보안 엔진은 실제 수집 URL과 자체 회귀 샘플을 함께
+          <br />
+          점검해 악성 링크 판정의 정확도와 일관성을 검증합니다.
         </p>
       </div>
 
