@@ -236,7 +236,14 @@ function DetectionRateSection() {
         <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 mb-5 tracking-tight break-keep leading-tight">
           검증된 탐지 성능
         </h2>
-        <p className="text-base sm:text-lg text-gray-500 max-w-3xl mx-auto break-keep leading-relaxed">
+        <p className="text-base sm:hidden text-gray-500 max-w-3xl mx-auto break-keep leading-relaxed">
+          LinClean 보안 엔진은 실제 수집 URL과 자체 회귀 샘플을
+          <br />
+          함께 점검해 악성 링크 판정의
+          <br />
+          정확도와 일관성을 검증합니다.
+        </p>
+        <p className="hidden sm:block text-lg text-gray-500 max-w-3xl mx-auto break-keep leading-relaxed">
           LinClean 보안 엔진은 실제 수집 URL과 자체 회귀 샘플을 함께
           <br />
           점검해 악성 링크 판정의 정확도와 일관성을 검증합니다.

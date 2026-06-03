@@ -67,7 +67,7 @@ export default function Hero() {
           <div className="text-center lg:text-left">
             <h1 className="text-[30px] min-[375px]:text-[34px] sm:text-5xl md:text-6xl font-bold tracking-tight text-[var(--text-main)] mb-16 leading-tight break-keep">
               <span className="whitespace-nowrap">모든 링크를 한 곳에서</span><br />
-              <span className="block h-6"></span>
+              <span className="block h-3 sm:h-6"></span>
               <span className="whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-600">안전하고 편리하게</span>
             </h1>
             <div className="mt-0 flex flex-col items-center lg:items-start">
